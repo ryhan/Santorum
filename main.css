@@ -1,0 +1,161 @@
+html{
+	margin:0;
+	padding:0;
+}
+body{
+	width:600px;
+	margin:100px auto;
+	padding:0;
+	font-family: Helvetica, arial, sans-serif;
+	font-size:16px;
+	font-weight:300;
+	background-color:#FFF;
+	color:#333;
+}
+h1{
+	font-family: 'Asap', sans-serif;
+	text-transform:uppercase;
+	font-size:30px;
+	color:#555;
+	margin:0;
+	padding:0 5px;
+}
+p.quote{
+	font-size:20px;
+	color:#444;
+	background-color:#FBF2C4;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FBF2C4), to(#FAECAC));
+    
+	border:1px solid #C3B3AF;
+	box-shadow: inset 0 1px 0 #FDFBEC;
+	padding:20px;
+	border-radius:7px;
+
+}
+
+div.sources{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:#EEE;
+	padding:5px 10px;
+	color:#888;
+	font-size:12px;
+}
+	div.sources a{
+		color:#AAA;
+	}
+/*
+span.blue{
+	color:#265AF7;
+	-webkit-animation: fadecolor 6s 3s infinite;
+}
+span.red{
+	color:#F7322E;
+	-webkit-animation: fadecolor 6s infinite;
+}
+
+@-webkit-keyframes fadecolor {
+	50% {color:#444;}
+}
+*/
+
+div.btn{
+	margin:0;
+	position:relative;
+	display:inline-block;
+	width:190px;
+	height:40px;
+	padding:20px;
+	padding-left:80px;
+	vertical-align:text-top;
+	background-color:#FFF;
+	border:1px solid #DDD;
+	border-radius:5px;
+
+    color:#FFF;
+    text-decoration:none;
+    cursor:pointer;
+    background-color:#222ECD; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#384EFF), to(#222ECD));
+    border:1px solid #141B7A;
+    box-shadow:	inset 0 1px 0 #6584FF,
+    			inset 0 40px 0 rgba(255,255,255,0.05),
+    			0 0 8px #666;
+}
+div.btn.santorum{
+	margin-left:10px;
+	background-color:#F0411F; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#F0411F), to(#A73125));
+    border:1px solid #7C2210;
+    box-shadow:	inset 0 1px 0 #FF807C,
+    			inset 0 40px 0 rgba(255,255,255,0.05),
+    			0 0 8px #666;
+
+}
+div.btn:hover{
+	box-shadow:	0 0 12px #222;
+}
+div.btn:active{
+	box-shadow: 0 0 20px #384EFF,
+				inset 0 1px 0 rgba(0,0,0,0.1),
+				inset 0 3px 0 rgba(0,0,0,0.05);
+}
+div.btn.santorum:active{
+	box-shadow: 0 0 20px #F0411F,
+				inset 0 1px 0 rgba(0,0,0,0.1),
+				inset 0 3px 0 rgba(0,0,0,0.05);
+}
+
+div.btn img{
+	position:absolute;
+	height:50px;
+	left:15px;
+	top:15px;
+	opacity:0.5;
+}
+span.name{
+	text-shadow:#222 0 -1px;
+	font-size:16px;
+	display:block;
+	font-weight:bold;
+}
+span.desc{
+	font-size:14px;
+}
+
+
+div.question{
+	position:relative;
+}
+div.question div.overlay{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+}
+div.question.inactive div.overlay{
+	
+	height:100%;
+	
+}
+div.question.inactive{
+	opacity:0.3;
+}
+div.question.inactive.ayatollah div.btn.santorum, div.question.inactive.santorum div.btn.ayatollah{
+	background-color:#555; 
+	color:#BBB;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#444));
+    border:1px solid #444;
+    box-shadow:	inset 0 1px 0 #888,
+    			inset 0 40px 0 rgba(255,255,255,0.05),
+    			0 0 8px #666;
+
+}
+p.message{
+	text-align:center;
+	padding:10px;
+	border:1px dashed #BBB;
+	border-radius:4px;
+}
